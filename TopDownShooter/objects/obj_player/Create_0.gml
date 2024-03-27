@@ -3,7 +3,7 @@ moveSpeed = 4;
 
 Score = 0;
 
-HP = 10;
+HP = 30;
 
 //--- DIFFERENNT CHARACTERS ---
 
@@ -14,7 +14,7 @@ if (room = rm_1)
 }
 
 //pikachu
-if (room = rm_2)
+if (room = rm_pikachu)
 {
 	sprite_index = spr_pikachu;
 }

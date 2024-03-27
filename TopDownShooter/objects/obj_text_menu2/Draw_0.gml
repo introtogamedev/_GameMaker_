@@ -24,5 +24,5 @@ if (keyboard_check(ord("1")))
 
 if (keyboard_check(ord("2")))
 {
-	room_goto(rm_2);
+	room_goto(rm_pikachu);
 }
