@@ -26,7 +26,7 @@ y += moveY * moveSpeed;
 
 // Shooting with mouse
 if (mouse_check_button_pressed(mb_left)) {
-    var bullet = instance_create_layer(x, y, "Instances", obj_bullet);
+    var bullet = instance_create_layer(x, y, "Instances", obj_bullet_player);
     bullet.direction = point_direction(x, y, mouse_x, mouse_y);
 }
 
@@ -41,3 +41,4 @@ if (y > obj_camera.y + obj_camera.view_height - (200 + sprite_height)) obj_camer
 //room boundaries
 x = clamp(x, 0, room_width - sprite_width);
 y = clamp(y, 0, room_height - sprite_height);
+

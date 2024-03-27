@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player",
-    "path": "sprites/spr_player/spr_player.yy",
+    "name": "spr_fish",
+    "path": "sprites/spr_fish/spr_fish.yy",
   },
   "spriteMaskId": null,
   "visible": true,
