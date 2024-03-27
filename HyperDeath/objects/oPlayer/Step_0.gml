@@ -9,6 +9,8 @@ rightKey = keyboard_check(ord("D"));
 leftKey = keyboard_check(ord("A"));
 upKey = keyboard_check(ord("W"));
 downKey = keyboard_check(ord("S"));
+shootKey = mouse_check_button(mb_left);
+swapKey = mouse_check_button_pressed(mb_right);
 #endregion
 
 
@@ -81,6 +83,49 @@ aimDir = point_direction(x, centerY, mouse_x, mouse_y);
 	sprite_index = sprite[face];
 #endregion
 
+//
+//WeaponSwap
+//
+#region
+var _playerWepons = global.PlayerWeapons;
+if swapKey 
+{
+	selectedWeapon ++;
+	if selectedWeapon >= array_length(_playerWepons)
+	{
+		selectedWeapon = 0;
+	}
+	weapon = _playerWepons[selectedWeapon];
+}
 
+
+
+
+#endregion
+
+
+
+
+
+//
+//Shoot Weapin
+//
+#region
+if shootTimer > 0 {shootTimer --;};
+if shootKey && shootTimer <= 0
+{
+	//timer
+	shootTimer = weapon.coolDown;
+	//shooting
+	var xOffset = lengthdir_x(weapon.length + weaponOffsetDist, aimDir);
+	var yOffset = lengthdir_y(weapon.length + weaponOffsetDist, aimDir)
+	var _bulletInst = instance_create_depth(x + xOffset, centerY + yOffset, depth - 100, weapon.bulletObj);
+	with (_bulletInst)	//with makes it that we are coding within the instantce obj, other. is used to refernece the player object
+	{
+		dir = other.aimDir;
+	}
+}
+#endregion
 //depth
 	depth = -bbox_bottom;
+	

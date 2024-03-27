@@ -12,6 +12,6 @@ if (aimDir > 90 && aimDir < 270 )
 	_weaponYscl = -1;
 }
 
-draw_sprite_ext(sYoyoGun, 0, x + _xOffset, centerY + _yOffset, 1, _weaponYscl, aimDir, c_white, 1)
+draw_sprite_ext(weapon.sprite, 0, x + _xOffset, centerY + _yOffset, 1, _weaponYscl, aimDir, c_white, 1)
 
 }

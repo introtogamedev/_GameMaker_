@@ -23,3 +23,15 @@ weaponOffsetDist = 4;
 
 //aim
 aimDir = 0;
+
+shootTimer = 0;
+
+
+//Add waepon to player array
+array_push(global.PlayerWeapons, global.WeaponList.starGun);
+array_push(global.PlayerWeapons, global.WeaponList.yoyoGun);
+
+
+	
+selectedWeapon = 0;
+weapon = global.PlayerWeapons[selectedWeapon];
