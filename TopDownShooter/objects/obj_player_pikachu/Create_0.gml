@@ -6,3 +6,5 @@ Score = 0;
 HP = 30;
 
 bullet_timer = 0;
+
+gold = 0;

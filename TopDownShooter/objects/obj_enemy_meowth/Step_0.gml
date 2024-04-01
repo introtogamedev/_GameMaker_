@@ -8,6 +8,14 @@ if (x < 0 || x > room_width || y < 0 || y > room_height) {
 
 if (current_hp <= 0) {
 	obj_player_pikachu.Score += 1;
+	// Adjust the number of coins and their spread
+	var num_coins = 5; // Number of coins to spawn
+	for (var i = 0; i < num_coins; i++) {
+		var coin = instance_create_layer(x, y, "Instances", obj_coin);
+		// You can add some randomness to the position to spread the coins out
+		coin.x += irandom_range(-16, 16);
+		coin.y += irandom_range(-16, 16);
+	}
 	instance_destroy();
 }
 

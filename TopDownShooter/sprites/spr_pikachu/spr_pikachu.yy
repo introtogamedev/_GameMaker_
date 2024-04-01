@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_pikachu",
-  "bbox_bottom": 356,
+  "bbox_bottom": 71,
   "bbox_left": 0,
-  "bbox_right": 487,
+  "bbox_right": 97,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -20,7 +20,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 357,
+  "height": 72,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7e38f26d-66c4-4260-bca9-020b1edaaad8","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -76,5 +76,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 500,
+  "width": 100,
 }

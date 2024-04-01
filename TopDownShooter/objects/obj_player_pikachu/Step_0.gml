@@ -11,15 +11,19 @@ if (keyboard_check(ord("S")) && !place_meeting(x, y + moveSpeed, obj_wall)) {
 }
 if (keyboard_check(ord("A")) && !place_meeting(x - moveSpeed, y, obj_wall)) {
     moveX -= 1;
+    //image_xscale = -1; // Flip sprite when moving left
+	sprite_index = spr_player_pikachu_RunningLeft; // Use your left-facing sprite
 }
 if (keyboard_check(ord("D")) && !place_meeting(x + moveSpeed, y, obj_wall)) {
     moveX += 1;
+    //image_xscale = 1; // Keep original orientation when moving right
+	sprite_index = spr_player_pikachu_RunningRight; // Use your left-facing sprite
 }
-
 
 // Apply movement
 x += moveX * moveSpeed;
 y += moveY * moveSpeed;
+
 
 
 /*
@@ -72,3 +76,13 @@ if (y > obj_camera.y + obj_camera.view_height - (200 + sprite_height)) obj_camer
 x = clamp(x, 0, room_width - sprite_width);
 y = clamp(y, 0, room_height - sprite_height);
 
+
+// Check for collision with coins
+var coin = instance_place(x, y, obj_coin);
+if (coin) {
+    // Code to increase player's gold or score
+    gold += 1;
+    
+    // Destroy the coin instance
+    with (coin) instance_destroy();
+}
