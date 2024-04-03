@@ -33,7 +33,7 @@ swapKey = mouse_check_button_pressed(mb_right);
 	yspd = lengthdir_y(_spd, moveDir);
 	
 	//Collisions
-	if place_meeting(x + xspd, y, oWall)
+	if place_meeting(x + xspd, y, oWall) 
 	{
 		xspd = 0;	
 	}
@@ -104,9 +104,6 @@ if swapKey
 #endregion
 
 
-
-
-
 //
 //Shoot Weapin
 //
@@ -119,10 +116,18 @@ if shootKey && shootTimer <= 0
 	//shooting
 	var xOffset = lengthdir_x(weapon.length + weaponOffsetDist, aimDir);
 	var yOffset = lengthdir_y(weapon.length + weaponOffsetDist, aimDir)
-	var _bulletInst = instance_create_depth(x + xOffset, centerY + yOffset, depth - 100, weapon.bulletObj);
-	with (_bulletInst)	//with makes it that we are coding within the instantce obj, other. is used to refernece the player object
+	
+	var _spread =  weapon.spread;
+	var _spreadDiv = _spread / max(weapon.bulletNum-1, 1);
+	
+	//create right amout of bullet
+	for (var i = 0; i < weapon.bulletNum; i++) 
 	{
-		dir = other.aimDir;
+		var _bulletInst = instance_create_depth(x + xOffset, centerY + yOffset, depth - 100, weapon.bulletObj);
+		with (_bulletInst)	//with makes it that we are coding within the instantce obj, other. is used to refernece the player object
+		{
+			dir = other.aimDir - _spread/2 + _spreadDiv*i;
+		}
 	}
 }
 #endregion
