@@ -1,7 +1,7 @@
 spd = 1; // Speed of the enemy
 
 // Initialize HP
-max_hp = 300; // Maximum HP
+max_hp = 100; // Maximum HP
 current_hp = max_hp; // Current HP, starts at maximum
 
 bullet_timer = 0;

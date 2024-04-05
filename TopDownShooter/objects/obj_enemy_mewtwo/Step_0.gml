@@ -11,11 +11,17 @@ if (current_hp <= 0) {
 	instance_destroy();
 }
 
-// Shooting with mouse
+
+/// @function enemy_shoot_burst(x, y, direction, count, spread)
+/// @description Shoots a burst of bullets in a spread
 if (bullet_timer <= 100) {
-	if (bullet_timer%25 == 0){
-		var bullet = instance_create_layer(x, y, "Instances", obj_bullet_enemy);
-		bullet.direction = bullet_direction;
+	if (bullet_timer%33 == 0){
+		for (var i = 0; i < 5; i++) {
+			var dir = point_direction(x, y, obj_player_pikachu.x, obj_player_pikachu.y) - (45 / 2) + (45 / (5 - 1)) * i;
+			var bullet = instance_create_layer(x, y, "Instances", obj_bullet_enemy);
+			bullet.direction = dir;
+			bullet.speed = 4; // Adjust speed as necessary
+		}
 	}
 	bullet_timer += 1;
 }
