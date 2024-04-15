@@ -9,3 +9,5 @@ global.playerBulletTimer = 0;
 global.playerGold = 50;
 
 global.playerDamage = 5;
+
+global.EnemyGenerationSpeed = 2;
