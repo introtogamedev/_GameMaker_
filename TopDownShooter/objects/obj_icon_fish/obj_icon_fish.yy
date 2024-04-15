@@ -1,13 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_enemy",
+  "%Name":"obj_icon_fish",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_bullet_player","path":"objects/obj_bullet_player/obj_bullet_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_enemy",
+  "name":"obj_icon_fish",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_fish_enemy",
-    "path":"sprites/spr_fish_enemy/spr_fish_enemy.yy",
+    "name":"spr_icon_fish",
+    "path":"sprites/spr_icon_fish/spr_icon_fish.yy",
   },
   "spriteMaskId":null,
   "visible":true,

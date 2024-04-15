@@ -42,3 +42,56 @@ if (y > obj_camera.y + obj_camera.view_height - (200 + sprite_height)) obj_camer
 x = clamp(x, 0, room_width - sprite_width);
 y = clamp(y, 0, room_height - sprite_height);
 
+
+
+//GRAVITY
+
+if (room = rm_1_ocean)
+{
+	vertical_velocity += falling_gravity;
+	if (vertical_velocity > falling_max_velocity)
+	{
+		vertical_velocity = falling_max_velocity;
+	}
+
+	if (keyboard_check(ord("W")) || keyboard_check(vk_space))
+	{
+		vertical_velocity -= jump_acceleration;
+	}
+	
+	if (vertical_velocity < -jump_max_velocity)
+	{
+		vertical_velocity = -jump_max_velocity;
+	}
+
+	y += vertical_velocity;
+	
+	
+	//autoshooting
+	if (instance_exists(obj_enemy))
+	{
+    // Get a list of all enemies in the room
+    var enemy_list = instance_find(obj_enemy, 0);
+    var enemy_count = instance_number(obj_enemy);
+    
+    for (var i = 0; i < enemy_count; i++)
+    {
+        var enemy = instance_find(obj_enemy, i);
+        
+        // Calculate direction towards enemy
+        var dir = point_direction(x, y, enemy.x, enemy.y);
+        
+		// Shooting with mouse
+		if (bullet_timer <= 100)
+		{
+			if (bullet_timer%25 == 0)
+			{
+				var bullet = instance_create_layer(x, y, "Instances", obj_bullet_player);
+				bullet.direction = dir;
+			}
+			bullet_timer += 1;
+		}
+		else bullet_timer = 0;
+	}
+	}
+}

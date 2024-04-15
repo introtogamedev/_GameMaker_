@@ -18,9 +18,9 @@ if (bullet_timer <= 100) {
 	if (bullet_timer%33 == 0){
 		for (var i = 0; i < 5; i++) {
 			var dir = point_direction(x, y, obj_player_pikachu.x, obj_player_pikachu.y) - (45 / 2) + (45 / (5 - 1)) * i;
-			var bullet = instance_create_layer(x, y, "Instances", obj_bullet_enemy);
+			var bullet = instance_create_layer(x, y, "Instances", obj_bullet_enemy_boss);
 			bullet.direction = dir;
-			bullet.speed = 4; // Adjust speed as necessary
+			//bullet.speed = 4;
 		}
 	}
 	bullet_timer += 1;
