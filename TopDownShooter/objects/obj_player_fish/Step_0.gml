@@ -11,9 +11,11 @@ if (keyboard_check(ord("S")) && !place_meeting(x, y + moveSpeed, obj_wall)) {
 }
 if (keyboard_check(ord("A")) && !place_meeting(x - moveSpeed, y, obj_wall)) {
     moveX -= 1;
+	image_xscale = -1;
 }
 if (keyboard_check(ord("D")) && !place_meeting(x + moveSpeed, y, obj_wall)) {
     moveX += 1;
+	image_xscale = 1;
 }
 
 
