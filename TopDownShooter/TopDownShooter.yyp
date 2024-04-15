@@ -107,6 +107,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_menu_select","path":"rooms/rm_menu_select/rm_menu_select.yy",},},
+    {"roomId":{"name":"rm_1_ocean","path":"rooms/rm_1_ocean/rm_1_ocean.yy",},},
     {"roomId":{"name":"rm_store","path":"rooms/rm_store/rm_store.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_1","path":"rooms/rm_1/rm_1.yy",},},
@@ -114,7 +115,6 @@
     {"roomId":{"name":"rm_win","path":"rooms/rm_win/rm_win.yy",},},
     {"roomId":{"name":"rm_lose","path":"rooms/rm_lose/rm_lose.yy",},},
     {"roomId":{"name":"rm_pikachu_2","path":"rooms/rm_pikachu_2/rm_pikachu_2.yy",},},
-    {"roomId":{"name":"rm_1_ocean","path":"rooms/rm_1_ocean/rm_1_ocean.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

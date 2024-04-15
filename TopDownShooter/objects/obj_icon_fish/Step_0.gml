@@ -17,5 +17,5 @@ if keyboard_check(vk_left)
 
 if (selected = true && keyboard_check(vk_enter))
 {
-	room_goto(rm_1);
+	room_goto(rm_1_ocean);
 }
