@@ -18,7 +18,7 @@ draw_text(300,200, global.playerMoveSpeed);
 // Draw Health Potion
 draw_sprite(spr_health_potion, -1, itemX, itemY);
 draw_text(itemX, itemY + 200, "- Health Potion -");
-draw_text(itemX + 50, itemY + 230, "HP+20");
+draw_text(itemX + 50, itemY + 230, "HP + 20");
 draw_text(itemX + 40, itemY + 260, "Cost: " + string(global.itemCost[ShopItem.HealthPotion]));
 draw_text(itemX + 10, itemY + 290, "PRESS '1' TO BUY");
 
@@ -28,7 +28,7 @@ itemX += spacing;
 // Draw Damage Boost
 draw_sprite(spr_damage_boost, -1, itemX, itemY);
 draw_text(itemX, itemY + 200, "- Damage Boost -");
-draw_text(itemX + 50, itemY + 230, "Damage+1");
+draw_text(itemX + 50, itemY + 230, "Damage + 1");
 draw_text(itemX + 40, itemY + 260, "Cost: " + string(global.itemCost[ShopItem.DamageBoost]));
 draw_text(itemX + 10, itemY + 290, "PRESS '2' TO BUY");
 
@@ -38,7 +38,7 @@ itemX += spacing;
 // Draw Speed Boost
 draw_sprite(spr_speed_boost, -1, itemX, itemY);
 draw_text(itemX, itemY + 200, "- Speed Boost -");
-draw_text(itemX + 50, itemY + 230, "Speed+1");
+draw_text(itemX + 50, itemY + 230, "Speed + 1");
 draw_text(itemX + 40, itemY + 260, "Cost: " + string(global.itemCost[ShopItem.SpeedBoost]));
 draw_text(itemX + 10, itemY + 290, "PRESS '3' TO BUY");
 

@@ -33,3 +33,7 @@ if (keyboard_check(ord("2")))
 
 //lore text
 draw_text(100,600,text);
+
+
+//___ selected text
+draw_text(598,300,text_selected);
