@@ -1,3 +1,3 @@
-obj_player_pikachu.HP -= 1;
+global.playerHP -= 1;
 
 instance_destroy();

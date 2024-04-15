@@ -1,5 +1,5 @@
 // Basic enemy movement towards the player
-if (!place_meeting(x, y, obj_wall)) move_towards_point(obj_player.x, obj_player.y, spd);
+if (!place_meeting(x, y, obj_wall)) move_towards_point(obj_player_fish.x, obj_player_fish.y, spd);
 
 // Optional: Destroy the enemy if it goes outside the room bounds
 if (x < 0 || x > room_width || y < 0 || y > room_height) {
@@ -7,7 +7,7 @@ if (x < 0 || x > room_width || y < 0 || y > room_height) {
 }
 
 if (HP <= 0) {
-	obj_player.Score += 1;
+	obj_player_fish.Score += 1;
 	instance_destroy();
 }
 
