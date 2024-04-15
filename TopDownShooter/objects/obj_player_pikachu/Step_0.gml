@@ -3,26 +3,26 @@ var moveX = 0;
 var moveY = 0;
 
 // Check for WASD key presses and adjust movement variables
-if (keyboard_check(ord("W")) && !place_meeting(x, y - moveSpeed, obj_wall)) {
+if (keyboard_check(ord("W")) && !place_meeting(x, y - global.playerMoveSpeed, obj_wall)) {
     moveY -= 1;
 }
-if (keyboard_check(ord("S")) && !place_meeting(x, y + moveSpeed, obj_wall)) {
+if (keyboard_check(ord("S")) && !place_meeting(x, y + global.playerMoveSpeed, obj_wall)) {
     moveY += 1;
 }
-if (keyboard_check(ord("A")) && !place_meeting(x - moveSpeed, y, obj_wall)) {
+if (keyboard_check(ord("A")) && !place_meeting(x - global.playerMoveSpeed, y, obj_wall)) {
     moveX -= 1;
     //image_xscale = -1; // Flip sprite when moving left
 	sprite_index = spr_player_pikachu_RunningLeft; // Use your left-facing sprite
 }
-if (keyboard_check(ord("D")) && !place_meeting(x + moveSpeed, y, obj_wall)) {
+if (keyboard_check(ord("D")) && !place_meeting(x + global.playerMoveSpeed, y, obj_wall)) {
     moveX += 1;
     //image_xscale = 1; // Keep original orientation when moving right
 	sprite_index = spr_player_pikachu_RunningRight; // Use your left-facing sprite
 }
 
 // Apply movement
-x += moveX * moveSpeed;
-y += moveY * moveSpeed;
+x += moveX * global.playerMoveSpeed;
+y += moveY * global.playerMoveSpeed;
 
 
 
@@ -48,15 +48,15 @@ if (instance_exists(obj_enemy_meowth))
         var dir = point_direction(x, y, enemy.x, enemy.y);
         
 		// Shooting with mouse
-		if (bullet_timer <= 100) {
-			if (bullet_timer%25 == 0){
+		if (global.playerBulletTimer <= 100) {
+			if (global.playerBulletTimer%25 == 0){
 				var bullet = instance_create_layer(x, y, "Instances", obj_bullet_pikachu);
 				bullet.direction = dir;
 				bullet.speed = 10; // Adjust speed as necessary
 			}
-			bullet_timer += 1;
+			global.playerBulletTimer += 1;
 		}
-		else bullet_timer = 0;
+		else global.playerBulletTimer = 0;
         
         
         
@@ -66,10 +66,10 @@ if (instance_exists(obj_enemy_meowth))
 
 
 //camera
-if (x > obj_camera.x + 350) obj_camera.x += moveSpeed;
-if (x < obj_camera.x + obj_camera.view_width - (350 + sprite_width)) obj_camera.x -= moveSpeed;
-if (y < obj_camera.y + 200) obj_camera.y -= moveSpeed;
-if (y > obj_camera.y + obj_camera.view_height - (200 + sprite_height)) obj_camera.y += moveSpeed;
+if (x > obj_camera.x + 350) obj_camera.x += global.playerMoveSpeed;
+if (x < obj_camera.x + obj_camera.view_width - (350 + sprite_width)) obj_camera.x -= global.playerMoveSpeed;
+if (y < obj_camera.y + 200) obj_camera.y -= global.playerMoveSpeed;
+if (y > obj_camera.y + obj_camera.view_height - (200 + sprite_height)) obj_camera.y += global.playerMoveSpeed;
 
 
 //room boundaries
@@ -81,7 +81,7 @@ y = clamp(y, 0, room_height - sprite_height);
 var coin = instance_place(x, y, obj_coin);
 if (coin) {
     // Code to increase player's gold or score
-    gold += 1;
+    global.playerGold += 1;
     
     // Destroy the coin instance
     with (coin) instance_destroy();

@@ -7,6 +7,6 @@ if (timer > 60)
 
 if (timer_text = 0)
 {
-	room_goto(rm_win);
+	room_goto(rm_store);
 }
 

@@ -68,15 +68,15 @@ if (room = rm_1_ocean)
 	
 	
 	//autoshooting
-	if (instance_exists(obj_enemy))
+	if (instance_exists(obj_enemy_EvilFish))
 	{
     // Get a list of all enemies in the room
-    var enemy_list = instance_find(obj_enemy, 0);
-    var enemy_count = instance_number(obj_enemy);
+    var enemy_list = instance_find(obj_enemy_EvilFish, 0);
+    var enemy_count = instance_number(obj_enemy_EvilFish);
     
     for (var i = 0; i < enemy_count; i++)
     {
-        var enemy = instance_find(obj_enemy, i);
+        var enemy = instance_find(obj_enemy_EvilFish, i);
         
         // Calculate direction towards enemy
         var dir = point_direction(x, y, enemy.x, enemy.y);
