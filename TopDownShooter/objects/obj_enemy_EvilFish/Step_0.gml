@@ -20,3 +20,15 @@ if (bullet_timer <= 100) {
 	bullet_timer += 1;
 }
 else bullet_timer = 0;
+
+
+//flip sprite based on direction enemy is going
+if (hspeed > 0)
+{
+	image_xscale = -1;
+}
+
+if (hspeed < 0)
+{
+	image_xscale = 1;
+}

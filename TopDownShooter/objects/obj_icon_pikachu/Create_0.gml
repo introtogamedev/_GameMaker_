@@ -1,4 +1,4 @@
-description = "Pikachu: Pikachu are small, and cute mouse-like Pokémon!";
+description = "Pikachu: Pikachu are small, and cute mouse-like Pokemon!";
 description2 = "PIKACHU SELECTED";
 
 selected = false;
