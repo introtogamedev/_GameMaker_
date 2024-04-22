@@ -3,6 +3,7 @@ moveSpeed = 4;
 
 Score = 0;
 
+max_hp = 30;
 HP = 30;
 
 bullet_timer = 0;

@@ -52,7 +52,8 @@ if (instance_exists(obj_enemy_meowth))
 			if (global.playerBulletTimer%25 == 0){
 				var bullet = instance_create_layer(x, y, "Instances", obj_bullet_pikachu);
 				bullet.direction = dir;
-				bullet.speed = 10; // Adjust speed as necessary
+
+				audio_play_sound(snd_lightning,10,false);
 			}
 			global.playerBulletTimer += 1;
 		}

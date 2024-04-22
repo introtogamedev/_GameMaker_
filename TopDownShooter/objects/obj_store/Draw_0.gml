@@ -42,4 +42,4 @@ draw_text(itemX + 50, itemY + 230, "Speed + 1");
 draw_text(itemX + 40, itemY + 260, "Cost: " + string(global.itemCost[ShopItem.SpeedBoost]));
 draw_text(itemX + 10, itemY + 290, "PRESS '3' TO BUY");
 
-draw_text(570, 650, "Once finish shopping, PRESS 'SAPCE' TO CPNTINUE");
+draw_text(570, 650, "Once finished shopping, PRESS 'SPACE' TO CONTINUE");
