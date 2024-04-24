@@ -1,2 +1,2 @@
 timer = 0;
-timer_text = 30
+timer_text = 20
