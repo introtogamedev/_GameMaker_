@@ -1,4 +1,5 @@
 global.playerHP = 30;
+global.playerMaxHP = global.playerHP;
 
 global.playerMoveSpeed = 5;
 

@@ -1,1 +1,1 @@
-max_hp = 30;
+global.playerMaxHP = global.playerHP;

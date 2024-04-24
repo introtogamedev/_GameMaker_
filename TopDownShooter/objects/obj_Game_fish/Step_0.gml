@@ -1,5 +1,7 @@
 if (obj_player_fish.HP <= 0) room_goto(rm_lose);
 
+
+
 //music: when background music stops playing, play again
 
 if (room = rm_1_ocean)
