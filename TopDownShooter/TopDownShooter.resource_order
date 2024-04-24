@@ -70,7 +70,6 @@
     {"name":"sPlayerLeft","order":2,"path":"sprites/sPlayerLeft/sPlayerLeft.yy",},
     {"name":"sPlayerRight","order":3,"path":"sprites/sPlayerRight/sPlayerRight.yy",},
     {"name":"sPlayerUp","order":4,"path":"sprites/sPlayerUp/sPlayerUp.yy",},
-    {"name":"spr_aerial","order":17,"path":"sprites/spr_aerial/spr_aerial.yy",},
     {"name":"spr_bg_ocean","order":26,"path":"sprites/spr_bg_ocean/spr_bg_ocean.yy",},
     {"name":"spr_bg","order":14,"path":"sprites/spr_bg/spr_bg.yy",},
     {"name":"spr_bullet_enemy_bos","order":29,"path":"sprites/spr_bullet_enemy_bos/spr_bullet_enemy_bos.yy",},

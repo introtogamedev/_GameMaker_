@@ -100,7 +100,6 @@
     {"id":{"name":"sPlayerLeft","path":"sprites/sPlayerLeft/sPlayerLeft.yy",},},
     {"id":{"name":"sPlayerRight","path":"sprites/sPlayerRight/sPlayerRight.yy",},},
     {"id":{"name":"sPlayerUp","path":"sprites/sPlayerUp/sPlayerUp.yy",},},
-    {"id":{"name":"spr_aerial","path":"sprites/spr_aerial/spr_aerial.yy",},},
     {"id":{"name":"spr_bg_ocean","path":"sprites/spr_bg_ocean/spr_bg_ocean.yy",},},
     {"id":{"name":"spr_bg","path":"sprites/spr_bg/spr_bg.yy",},},
     {"id":{"name":"spr_bullet_enemy_bos","path":"sprites/spr_bullet_enemy_bos/spr_bullet_enemy_bos.yy",},},
@@ -149,6 +148,7 @@
     {"roomId":{"name":"rm_lose","path":"rooms/rm_lose/rm_lose.yy",},},
     {"roomId":{"name":"rm_win","path":"rooms/rm_win/rm_win.yy",},},
     {"roomId":{"name":"rm_pikachu_2","path":"rooms/rm_pikachu_2/rm_pikachu_2.yy",},},
+    {"roomId":{"name":"rm_matcha","path":"rooms/rm_matcha/rm_matcha.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
