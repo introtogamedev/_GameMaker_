@@ -1,3 +1,3 @@
-obj_player_fish.HP -= 1;
+global.fishHP -= 1;
 
 instance_destroy();
