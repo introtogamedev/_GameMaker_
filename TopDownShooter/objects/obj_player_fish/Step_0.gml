@@ -30,6 +30,16 @@ y += moveY * moveSpeed;
 if (mouse_check_button_pressed(mb_left)) {
     var bullet = instance_create_layer(x, y, "Instances", obj_bullet_player);
     bullet.direction = point_direction(x, y, mouse_x, mouse_y);
+	
+	//sound effects
+	if (obj_bullet_player.sprite_index = spr_bullet)
+	{
+		audio_play_sound(snd_bubble,10,false);
+	}
+	if (obj_bullet_player.sprite_index = spr_bullet_rifle)
+	{
+		audio_play_sound(snd_gun,10,false);
+	}
 }
 
 
@@ -90,6 +100,14 @@ if (room = rm_1_ocean)
 			{
 				var bullet = instance_create_layer(x, y, "Instances", obj_bullet_player);
 				bullet.direction = dir;
+				if (obj_bullet_player.sprite_index = spr_bullet)
+				{
+					audio_play_sound(snd_bubble,10,false);
+				}
+					if (obj_bullet_player.sprite_index = spr_bullet_rifle)
+				{
+					audio_play_sound(snd_gun,10,false);
+				}
 			}
 			bullet_timer += 1;
 		}

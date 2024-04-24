@@ -13,6 +13,7 @@ if keyboard_check(vk_right)
 	image_alpha = 1;
 	obj_text_menu2.Activate_Text_Box(description);
 	selected = true;
+	obj_text_menu2.Activate_Text_Box_2(description2);
 }
 
 if (selected = true && keyboard_check(vk_enter))
