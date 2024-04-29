@@ -133,4 +133,22 @@ if shootKey && shootTimer <= 0
 #endregion
 //depth
 	depth = -bbox_bottom;
-	
+
+
+//Enemy Damage
+if (place_meeting(x, y, oEnemyParent) and invincefFame <= 0)
+{
+	invincefFame = 30;
+	p_health -= 1;	
+}
+
+if (invincefFame > 0)
+{
+	invincefFame -= 1;
+}
+
+//Death
+if (p_health <= 0)
+{
+	room_goto(rm_lose);
+}
