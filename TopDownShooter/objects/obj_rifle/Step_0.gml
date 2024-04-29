@@ -2,7 +2,7 @@
 if (place_meeting(x,y,obj_player_fish))
 {
 	taken = true;
-	y = obj_player_fish.y + 10;
+	y = obj_player_fish.y + 6;
 	x = obj_player_fish.x;
 }
 

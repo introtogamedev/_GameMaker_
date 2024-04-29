@@ -110,7 +110,7 @@ y = clamp(y, 0, room_height - sprite_height);
 
 
 // Check for collision with coins
-var coin = instance_place(x, y, obj_coin);
+var coin = instance_place(x, y, obj_coin_fish);
 if (coin) {
     // Code to increase player's gold or score
     global.playerGold += 1;

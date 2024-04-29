@@ -7,7 +7,16 @@ if (x < 0 || x > room_width || y < 0 || y > room_height) {
 }
 
 if (HP <= 0) {
-	obj_player_fish.Score += 1;
+	global.fishScore += 1;
+	instance_destroy();
+
+	var num_coins = 5; // Number of coins to spawn
+	for (var i = 0; i < num_coins; i++) {
+		var coin = instance_create_layer(x, y, "Instances", obj_coin_fish);
+		// You can add some randomness to the position to spread the coins out
+		coin.x += irandom_range(-16, 16);
+		coin.y += irandom_range(-16, 16);
+	}
 	instance_destroy();
 }
 

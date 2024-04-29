@@ -13,14 +13,14 @@ draw_rectangle(hp_bar_x - 1, hp_bar_y - 1, hp_bar_x + hp_bar_width + 1, hp_bar_y
 draw_rectangle(hp_bar_x, hp_bar_y, hp_bar_x + hp_bar_width, hp_bar_y + hp_bar_height, false);
 
 // Calculate the width of the HP foreground based on current HP
-var hp_foreground_width = (HP / max_hp) * hp_bar_width;
+var hp_foreground_width = (global.fishHP / global.fishMaxHP) * hp_bar_width;
 
 // Draw HP bar foreground
 draw_set_color(c_green); // Set color for the HP bar
-if (HP < 16)
+if (global.fishHP < global.fishMaxHP/2)
 {
 	draw_set_color(c_yellow);
-	if (HP < 6)
+	if (global.fishHP < global.fishMaxHP/4)
 	{
 		draw_set_color(c_red);
 	}

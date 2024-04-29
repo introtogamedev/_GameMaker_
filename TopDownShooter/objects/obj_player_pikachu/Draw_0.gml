@@ -4,7 +4,7 @@ draw_self();
 // HP Bar dimensions and position
 var hp_bar_width = 50; // Width of the HP bar
 var hp_bar_height = 5; // Height of the HP bar
-var hp_bar_x = x - hp_bar_width / 2 + 50; // X position of the HP bar
+var hp_bar_x = x - hp_bar_width / 2 + 50 - 40; // X position of the HP bar
 var hp_bar_y = y - sprite_height / 2 - hp_bar_height - 5; // Y position of the HP bar
 
 // Draw HP bar background

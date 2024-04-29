@@ -1,4 +1,4 @@
-if (obj_player_fish.HP <= 0) room_goto(rm_lose);
+if (global.fishHP <= 0) room_goto(rm_lose);
 
 
 
