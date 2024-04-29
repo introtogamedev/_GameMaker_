@@ -4,7 +4,6 @@
     {"name":"Enmey","order":17,"path":"folders/Enmey.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
-    {"name":"UI_Sprites_CJ","order":19,"path":"folders/UI_Sprites_CJ.yy",},
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
@@ -15,6 +14,7 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"UI_Sprites_CJ","order":19,"path":"folders/UI_Sprites_CJ.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"obj_bg","order":20,"path":"objects/obj_bg/obj_bg.yy",},

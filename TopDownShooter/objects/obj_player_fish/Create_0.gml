@@ -1,3 +1,5 @@
+global.fishMaxHP = global.fishHP;
+
 //gravity
 falling_gravity = 1;
 falling_max_velocity = 5;

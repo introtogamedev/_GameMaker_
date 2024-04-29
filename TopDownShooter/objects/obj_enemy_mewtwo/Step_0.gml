@@ -11,7 +11,7 @@ if (current_hp <= 0) {
 	// Adjust the number of coins and their spread
 	var num_coins = 100; // Number of coins to spawn
 	for (var i = 0; i < num_coins; i++) {
-		var coin = instance_create_layer(x, y, "Instances", obj_coin_fish);
+		var coin = instance_create_layer(x, y, "Instances", obj_coin);
 		// You can add some randomness to the position to spread the coins out
 		coin.x += irandom_range(-75, 75);
 		coin.y += irandom_range(-75, 75);
