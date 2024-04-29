@@ -12,8 +12,10 @@ if keyboard_check(vk_left)
 	image_yscale = 1;
 	image_alpha = 1;
 	obj_text_menu2.Activate_Text_Box(description);
+	obj_text_menu2.Activate_Text_Box_2(description2);
 	selected = true;
 }
+
 
 if (selected = true && keyboard_check(vk_enter))
 {

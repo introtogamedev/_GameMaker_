@@ -1,3 +1,3 @@
-obj_player_fish.HP -= 1;
+global.fishHP -= global.BulletDamage_Type1;
 
 instance_destroy();

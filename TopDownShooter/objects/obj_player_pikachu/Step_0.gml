@@ -11,13 +11,13 @@ if (keyboard_check(ord("S")) && !place_meeting(x, y + global.playerMoveSpeed, ob
 }
 if (keyboard_check(ord("A")) && !place_meeting(x - global.playerMoveSpeed, y, obj_wall)) {
     moveX -= 1;
-    //image_xscale = -1; // Flip sprite when moving left
-	sprite_index = spr_player_pikachu_RunningLeft; // Use your left-facing sprite
+    image_xscale = -1; // Flip sprite when moving left
+	//sprite_index = spr_player_pikachu_RunningLeft; // Use your left-facing sprite
 }
 if (keyboard_check(ord("D")) && !place_meeting(x + global.playerMoveSpeed, y, obj_wall)) {
     moveX += 1;
-    //image_xscale = 1; // Keep original orientation when moving right
-	sprite_index = spr_player_pikachu_RunningRight; // Use your left-facing sprite
+    image_xscale = 1; // Keep original orientation when moving right
+	//sprite_index = spr_player_pikachu_RunningRight; // Use your left-facing sprite
 }
 
 // Apply movement
@@ -52,7 +52,10 @@ if (instance_exists(obj_enemy_meowth))
 			if (global.playerBulletTimer%25 == 0){
 				var bullet = instance_create_layer(x, y, "Instances", obj_bullet_pikachu);
 				bullet.direction = dir;
-				bullet.speed = 10; // Adjust speed as necessary
+
+				// audio_play_sound(snd_lightning,10,false);
+				audio_play_sound(laserGun,10,false);
+				
 			}
 			global.playerBulletTimer += 1;
 		}
@@ -64,6 +67,38 @@ if (instance_exists(obj_enemy_meowth))
     }
 }
 
+// Check if there are boss in the room
+if (instance_exists(obj_enemy_mewtwo))
+{
+    // Get a list of all enemies in the room
+    var enemy_list = instance_find(obj_enemy_mewtwo, 0);
+    var enemy_count = instance_number(obj_enemy_mewtwo);
+    
+    for (var i = 0; i < enemy_count; i++)
+    {
+        var enemy = instance_find(obj_enemy_mewtwo, i);
+        
+        // Calculate direction towards enemy
+        var dir = point_direction(x, y, enemy.x, enemy.y);
+        
+		// Shooting with mouse
+		if (global.playerBulletTimer <= 100) {
+			if (global.playerBulletTimer%25 == 0){
+				var bullet = instance_create_layer(x, y, "Instances", obj_bullet_pikachu);
+				bullet.direction = dir;
+
+				//audio_play_sound(snd_lightning,10,false);
+				audio_play_sound(laserGun,10,false);
+			}
+			global.playerBulletTimer += 1;
+		}
+		else global.playerBulletTimer = 0;
+        
+        
+        
+        // Optional: set bullet to destroy after a certain time to prevent lag
+    }
+}
 
 //camera
 if (x > obj_camera.x + 350) obj_camera.x += global.playerMoveSpeed;

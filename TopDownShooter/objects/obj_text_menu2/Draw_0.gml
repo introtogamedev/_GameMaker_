@@ -21,15 +21,11 @@ draw_text(row2, 175, "PIKACHU");
 draw_text(530, 75, "use arrow keys to select character");
 draw_text(595, 95, "press enter to select");
 
-if (keyboard_check(ord("1")))
-{
-	room_goto(rm_1);
-}
-
-if (keyboard_check(ord("2")))
-{
-	room_goto(rm_pikachu);
-}
 
 //lore text
 draw_text(100,600,text);
+
+
+//___ selected text
+draw_text(598,300,text_selected);
+

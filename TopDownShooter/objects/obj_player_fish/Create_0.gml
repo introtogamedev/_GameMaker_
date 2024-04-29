@@ -1,31 +1,5 @@
-// Define movement speed
-moveSpeed = 4;
+global.fishMaxHP = global.fishHP;
 
-Score = 0;
-
-HP = 30;
-
-bullet_timer = 0;
-
-
-
-//--- DIFFERENNT CHARACTERS ---
-
-//fish avatar
-if (room = rm_1)
-{
-	sprite_index = spr_fish;
-}
-
-//pikachu
-if (room = rm_pikachu)
-{
-	sprite_index = spr_pikachu;
-}
-	
-	
-	
-//gravity
 //gravity
 falling_gravity = 1;
 falling_max_velocity = 5;

@@ -42,4 +42,46 @@ draw_text(itemX + 50, itemY + 230, "Speed + 1");
 draw_text(itemX + 40, itemY + 260, "Cost: " + string(global.itemCost[ShopItem.SpeedBoost]));
 draw_text(itemX + 10, itemY + 290, "PRESS '3' TO BUY");
 
-draw_text(570, 650, "Once finish shopping, PRESS 'SAPCE' TO CPNTINUE");
+
+
+if (health_bought = true)
+{
+	draw_set_color(c_yellow);
+	draw_text(600,150,text_1);
+	timer++;
+	if (timer > duration || damage_bought = true || speed_bought = true)
+	{
+		draw_text(200,600,text);
+		timer = 0;
+		draw_set_color(c_white);
+		health_bought = false;
+	}
+}
+
+if (damage_bought = true)
+{
+	draw_set_color(c_yellow);
+	draw_text(600,150,text_2);
+	timer++;
+	if (timer > duration || health_bought = true || speed_bought = true)
+	{
+		draw_text(600,200,text);
+		timer = 0;
+		draw_set_color(c_white);
+		damage_bought = false;
+	}
+}
+
+if (speed_bought = true)
+{
+	draw_set_color(c_yellow);
+	draw_text(610,150,text_3);
+	timer++;
+	if (timer > duration || damage_bought = true || health_bought = true)
+	{
+		draw_text(200,600,text);
+		timer = 0;
+		draw_set_color(c_white);
+		speed_bought = false;
+	}
+}
