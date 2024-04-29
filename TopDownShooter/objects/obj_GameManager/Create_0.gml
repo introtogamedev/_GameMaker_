@@ -1,5 +1,6 @@
 //pikachu
 global.playerHP = 30;
+
 global.playerMaxHP = global.playerHP;
 
 global.playerMoveSpeed = 5;
@@ -13,6 +14,9 @@ global.playerGold = 50;
 global.playerDamage = 5;
 
 global.EnemyGenerationSpeed = 2;
+
+// LevelTimer
+global.levelTime_pikachu = 30;
 
 
 
@@ -31,3 +35,11 @@ global.fishGold = 50;
 global.fishDamage = 5;
 
 global.fishEnemyGenerationSpeed = 2;
+
+
+// Enemies
+global.EnemyType1_MaxHP = 25;
+global.BossType1_MaxHP = 200;
+
+global.BulletDamage_Type1 = 1;
+global.BulletDamage_Type2 = 1;

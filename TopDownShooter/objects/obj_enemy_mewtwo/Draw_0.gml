@@ -13,7 +13,7 @@ draw_rectangle(hp_bar_x - 1, hp_bar_y - 1, hp_bar_x + hp_bar_width + 1, hp_bar_y
 draw_rectangle(hp_bar_x, hp_bar_y, hp_bar_x + hp_bar_width, hp_bar_y + hp_bar_height, false);
 
 // Calculate the width of the HP foreground based on current HP
-var hp_foreground_width = (current_hp / max_hp) * hp_bar_width;
+var hp_foreground_width = (current_hp / global.BossType1_MaxHP) * hp_bar_width;
 
 // Draw HP bar foreground
 draw_set_color(c_purple); // Set color to red for the HP bar
