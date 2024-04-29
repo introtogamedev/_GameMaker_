@@ -1,2 +1,2 @@
 timer = 0;
-timer_text = 20
+CurrentLevelTime = global.levelTime_pikachu;

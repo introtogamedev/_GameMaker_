@@ -53,7 +53,9 @@ if (instance_exists(obj_enemy_meowth))
 				var bullet = instance_create_layer(x, y, "Instances", obj_bullet_pikachu);
 				bullet.direction = dir;
 
-				audio_play_sound(snd_lightning,10,false);
+				// audio_play_sound(snd_lightning,10,false);
+				audio_play_sound(laserGun,10,false);
+				
 			}
 			global.playerBulletTimer += 1;
 		}
@@ -85,7 +87,8 @@ if (instance_exists(obj_enemy_mewtwo))
 				var bullet = instance_create_layer(x, y, "Instances", obj_bullet_pikachu);
 				bullet.direction = dir;
 
-				audio_play_sound(snd_lightning,10,false);
+				//audio_play_sound(snd_lightning,10,false);
+				audio_play_sound(laserGun,10,false);
 			}
 			global.playerBulletTimer += 1;
 		}

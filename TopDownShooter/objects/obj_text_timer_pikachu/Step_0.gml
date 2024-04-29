@@ -1,11 +1,11 @@
 timer++;
 if (timer > 60)
 {
-	timer_text -= 1;
+	CurrentLevelTime -= 1;
 	timer = 0;
 }
 
-if (timer_text = 0)
+if (CurrentLevelTime <= 0)
 {
 	room_goto(rm_store);
 }

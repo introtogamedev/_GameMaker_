@@ -1,3 +1,3 @@
-global.fishHP -= 1;
+global.fishHP -= global.BulletDamage_Type1;
 
 instance_destroy();

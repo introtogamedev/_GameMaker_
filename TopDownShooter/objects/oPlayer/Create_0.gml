@@ -7,6 +7,9 @@ moveSpd = 2;
 xspd = 0;
 yspd = 0;
 
+p_health = 3;
+invincefFame = 0;
+
 // Spirite control
 face = 0;
 sprite[0] = sPlayerRight;

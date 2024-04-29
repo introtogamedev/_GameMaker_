@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_meowth",
-    "path":"sprites/spr_meowth/spr_meowth.yy",
+    "name":"spr_muk",
+    "path":"sprites/spr_muk/spr_muk.yy",
   },
   "spriteMaskId":null,
   "visible":true,

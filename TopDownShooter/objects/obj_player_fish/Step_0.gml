@@ -3,9 +3,11 @@ var moveX = 0;
 var moveY = 0;
 
 // Check for WASD key presses and adjust movement variables
+/*
 if (keyboard_check(ord("W")) && !place_meeting(x, y - global.fishMoveSpeed, obj_wall)) {
     moveY -= 1;
 }
+*/
 if (keyboard_check(ord("S")) && !place_meeting(x, y + global.fishMoveSpeed, obj_wall)) {
     moveY += 1;
 }
@@ -22,8 +24,6 @@ if (keyboard_check(ord("D")) && !place_meeting(x + global.fishMoveSpeed, y, obj_
 // Apply movement
 x += moveX * global.fishMoveSpeed;
 y += moveY * global.fishMoveSpeed;
-
-
 
 
 // Shooting with mouse
