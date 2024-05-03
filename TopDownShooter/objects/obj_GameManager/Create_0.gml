@@ -37,6 +37,8 @@ global.fishDamage = 5;
 
 global.fishEnemyGenerationSpeed = 2;
 
+global.fishGunTimer = 0;
+
 
 // Enemies
 global.EnemyType1_MaxHP = 25;

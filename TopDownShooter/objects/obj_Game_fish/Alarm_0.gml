@@ -6,5 +6,5 @@ alarm[0] = room_speed * 2;
 
 if (room = rm_1_ocean)
 {
-	alarm[0] = room_speed * 0.5;
+	alarm[0] = room_speed * spawn_rate;
 }

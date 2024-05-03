@@ -1,5 +1,5 @@
 //when player touches gun, they pick it up
-if (place_meeting(x,y,obj_player_fish))
+if (global.fishScore > 49)
 {
 	taken = true;
 	y = obj_player_fish.y + 6;
@@ -18,6 +18,8 @@ if (taken = true)
 		image_xscale = -1;
 	}
 	
+	if instance_exists(obj_enemy_EvilFish)
+	{
 	if (room = rm_1_ocean)
 	{
 		image_angle = point_direction(x,y,obj_enemy_EvilFish.x, obj_enemy_EvilFish.y);
@@ -25,5 +27,6 @@ if (taken = true)
 	else
 	{
 		image_angle = point_direction(x, y, mouse_x, mouse_y);
+	}
 	}
 }

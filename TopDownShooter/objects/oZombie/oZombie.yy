@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sSkeleton",
-    "path":"sprites/sSkeleton/sSkeleton.yy",
+    "name":"sSkeleton_1",
+    "path":"sprites/sSkeleton_1/sSkeleton_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
