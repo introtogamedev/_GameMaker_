@@ -18,5 +18,9 @@ if point_distance(xstart, ystart, x, y) > maxDist
 	{
 		destroy = true;   
 	}
+if (destroyCount >= destroyLimit)
+{
+	destroy = true;
+}
 	
 	

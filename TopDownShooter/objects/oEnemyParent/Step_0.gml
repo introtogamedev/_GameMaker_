@@ -6,7 +6,7 @@ if place_meeting(x, y, oDamageEnemy)
 	
 	hp -= _inst.damage;
 	
-	_inst.destroy = true;
+	_inst.destroyCount += 1;
 }
 
 if hp <= 0
