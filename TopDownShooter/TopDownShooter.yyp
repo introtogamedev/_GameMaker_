@@ -70,7 +70,6 @@
     {"id":{"name":"obj_text_timer_pikachu","path":"objects/obj_text_timer_pikachu/obj_text_timer_pikachu.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"obj_win_lose_room","path":"objects/obj_win_lose_room/obj_win_lose_room.yy",},},
-    {"id":{"name":"obj_gun_obtained","path":"objects/obj_gun_obtained/obj_gun_obtained.yy",},},
     {"id":{"name":"oDamageEnemy","path":"objects/oDamageEnemy/oDamageEnemy.yy",},},
     {"id":{"name":"oDamageParent","path":"objects/oDamageParent/oDamageParent.yy",},},
     {"id":{"name":"oEnemyParent","path":"objects/oEnemyParent/oEnemyParent.yy",},},
