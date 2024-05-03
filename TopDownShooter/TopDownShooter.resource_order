@@ -62,6 +62,7 @@
     {"name":"rm_pikachu","order":6,"path":"rooms/rm_pikachu/rm_pikachu.yy",},
     {"name":"rm_store_fish","order":10,"path":"rooms/rm_store_fish/rm_store_fish.yy",},
     {"name":"rm_store","order":7,"path":"rooms/rm_store/rm_store.yy",},
+    {"name":"rm_store_fish","order":10,"path":"rooms/rm_store_fish/rm_store_fish.yy",},
     {"name":"rm_win","order":4,"path":"rooms/rm_win/rm_win.yy",},
     {"name":"weaponCreation","order":1,"path":"scripts/weaponCreation/weaponCreation.yy",},
     {"name":"snd_bubble","order":2,"path":"sounds/snd_bubble/snd_bubble.yy",},

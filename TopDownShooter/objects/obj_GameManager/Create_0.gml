@@ -1,5 +1,6 @@
 //pikachu
 global.playerHP = 30;
+global.playerMaxHP = global.playerHP;
 
 global.playerMaxHP = global.playerHP;
 

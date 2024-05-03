@@ -158,6 +158,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_menu_main","path":"rooms/rm_menu_main/rm_menu_main.yy",},},
+    {"roomId":{"name":"rm_matcha","path":"rooms/rm_matcha/rm_matcha.yy",},},
     {"roomId":{"name":"rm_menu_select","path":"rooms/rm_menu_select/rm_menu_select.yy",},},
     {"roomId":{"name":"rm_store","path":"rooms/rm_store/rm_store.yy",},},
     {"roomId":{"name":"rm_pikachu","path":"rooms/rm_pikachu/rm_pikachu.yy",},},
