@@ -41,7 +41,6 @@
     {"name":"oYellowBullet","order":35,"path":"objects/oYellowBullet/oYellowBullet.yy",},
     {"name":"oZombie","order":48,"path":"objects/oZombie/oZombie.yy",},
     {"name":"rm_matcha_new","order":2,"path":"rooms/rm_matcha_new/rm_matcha_new.yy",},
-    {"name":"rm_matcha","order":3,"path":"rooms/rm_matcha/rm_matcha.yy",},
     {"name":"sBullet","order":36,"path":"sprites/sBullet/sBullet.yy",},
     {"name":"sEnemy","order":49,"path":"sprites/sEnemy/sEnemy.yy",},
     {"name":"sPlayerDown","order":37,"path":"sprites/sPlayerDown/sPlayerDown.yy",},
