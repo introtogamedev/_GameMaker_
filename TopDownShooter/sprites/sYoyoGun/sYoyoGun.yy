@@ -44,8 +44,8 @@
   },
   "origin":3,
   "parent":{
-    "name":"Players",
-    "path":"folders/Players.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

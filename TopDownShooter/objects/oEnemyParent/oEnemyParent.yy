@@ -10,8 +10,8 @@
   "name":"oEnemyParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enmey",
-    "path":"folders/Enmey.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

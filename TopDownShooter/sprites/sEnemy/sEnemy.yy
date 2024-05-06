@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Enmey",
-    "path":"folders/Enmey.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

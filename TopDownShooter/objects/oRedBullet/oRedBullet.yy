@@ -9,8 +9,8 @@
   "name":"oRedBullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Players",
-    "path":"folders/Players.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":{
     "name":"oDamageEnemy",
