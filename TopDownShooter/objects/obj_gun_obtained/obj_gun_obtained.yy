@@ -32,5 +32,5 @@
     "path":"sprites/spr_gun_obtained/spr_gun_obtained.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

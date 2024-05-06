@@ -30,6 +30,7 @@
     {"name":"obj_text_timer_pikachu","order":26,"path":"objects/obj_text_timer_pikachu/obj_text_timer_pikachu.yy",},
     {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
     {"name":"obj_win_lose_room","order":5,"path":"objects/obj_win_lose_room/obj_win_lose_room.yy",},
+    {"name":"obj_gun_obtained","order":51,"path":"objects/obj_gun_obtained/obj_gun_obtained.yy",},
     {"name":"oDamageEnemy","order":44,"path":"objects/oDamageEnemy/oDamageEnemy.yy",},
     {"name":"oDamageParent","order":45,"path":"objects/oDamageParent/oDamageParent.yy",},
     {"name":"oEnemyParent","order":46,"path":"objects/oEnemyParent/oEnemyParent.yy",},
