@@ -1,4 +1,4 @@
-description = "Fish: [lore]";
+description = "The fish dreams of a better life. The other fish don't like him. Chaos ensues.";
 description2 = "FISH SELECTED";
 blank = " ";
 

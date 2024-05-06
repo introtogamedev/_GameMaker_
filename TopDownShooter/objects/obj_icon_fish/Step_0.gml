@@ -1,4 +1,4 @@
-if keyboard_check(vk_right)
+if (keyboard_check(vk_right) || keyboard_check(ord("D")))
 {
 	image_xscale = 0.8;
 	image_yscale = 0.8;
@@ -6,7 +6,7 @@ if keyboard_check(vk_right)
 	selected = false;
 }
 
-if keyboard_check(vk_left)
+if (keyboard_check(vk_left) || keyboard_check(ord("A")))
 {
 	image_xscale = 1;
 	image_yscale = 1;

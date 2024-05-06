@@ -18,7 +18,7 @@ draw_set_color(c_white);
 //draw_text(row2, 400, "n/a (0)");
 draw_text(row1, 175, "FISH");
 draw_text(row2, 175, "PIKACHU");
-draw_text(530, 75, "use arrow keys to select character");
+draw_text(530, 75, "use A/D/Arrow keys to select character");
 draw_text(595, 95, "press enter to select");
 
 
